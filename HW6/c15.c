@@ -1,12 +1,15 @@
 #include <stdio.h>
 
-void func(int a){
+void func(int a)
+{
 	int b, c, k=1;
 	b=a%10;
 	c=a/10%10;
-	while (a>0){
+	while (a>0)
+	{
 
-		if (b<c || b==c){
+		if (b<c || b==c)
+		{
 			k=0;
 			break;
 		}
@@ -19,12 +22,12 @@ void func(int a){
 		printf("YES");
 	else 
 		printf("NO");
-	}
+}
 
 int main(void)
 {
-    int a;
-    scanf("%d", &a);
+	int a;
+	scanf("%d", &a);
 	func(a);
 	return 0;
 }
