@@ -1,14 +1,16 @@
 #include <stdio.h>
 
-void print_num(int a){
-	if (a>0){
+void print_num(int a)
+{
+	if (a>0)
+	{
 		printf("%d ", a%10);
 		print_num(a/10);
-		}
-
 	}
+}
 
-int main(){
+int main()
+{
 	int a;
 	scanf("%d", &a);
 	if (a==0) 
@@ -16,4 +18,4 @@ int main(){
 	else 
 		print_num(a);
 	return 0;
-	}
+}
